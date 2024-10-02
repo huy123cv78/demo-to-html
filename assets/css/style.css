@@ -13,9 +13,17 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
-/* ====================== */
+/* ====================== common*/
 a {
   text-decoration: none;
+}
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
 }
 .btn {
   display: inline-block;
@@ -227,4 +235,42 @@ header .action {
 }
 .hero .stas strong:nth-child(2) {
   margin-left: 28px;
+}
+/* ==========popular */
+.popular {
+  margin-top: 135px;
+  padding: 65px;
+}
+.popular-tren {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular-tren .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+.controls {
+  display: flex;
+  gap: 18px;
+}
+
+.popular-tren .control-bnt {
+  background: transparent; /* trong suốt */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.popular-tren .control-bnt:hover {
+  background-color: var(--primary-color);
+  color: #fcefff;
+  cursor: pointer; /* hiển thị bàn tay */
 }

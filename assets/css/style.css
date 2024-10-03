@@ -47,7 +47,22 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-/* ====================== */
+.line-clamp {
+  /* quá 1 dòng sẽ hiện dấu ... */
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  /* quá 2 dòng sẽ hiện dấu ... */
+  --line-clamp: 2;
+}
+.break-all {
+  /* tương tự dòng trên nhưng cần phải có trong các tiêu đề và văn bản*/
+  word-break: break-all;
+}
+/* ====================== herder*/
 .header {
   background: #fff;
 }
@@ -97,7 +112,7 @@ header .action {
   margin-left: 49px;
 }
 /* ========= main*/
-/* ========= hero*/
+/* ========= hero==================*/
 .hero {
   /* margin-top: 56px; không đổ được nền */
   padding: 56px 0 65px;
